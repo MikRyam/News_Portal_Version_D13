@@ -1,0 +1,156 @@
+2021-12-23 18:31:48,341 :: ERROR -- /home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/utils/log.py / (<class 'django.urls.exceptions.NoReverseMatch'>, NoReverseMatch("Reverse for 'post_detail' not found. 'post_detail' is not a valid view function or pattern name."), <traceback object at 0x7f0b05ef08c0>) :Internal Server Error: /news/
+Traceback (most recent call last):
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    response = response.render()
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 694, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'post_detail' not found. 'post_detail' is not a valid view function or pattern name.
+2021-12-23 18:31:48,345 :: ERROR -- /home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :"GET /news/ HTTP/1.1" 500 275480
+2021-12-23 18:40:44,723 :: ERROR -- /home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/utils/log.py / (<class 'django.urls.exceptions.NoReverseMatch'>, NoReverseMatch("Reverse for 'post_detail' not found. 'post_detail' is not a valid view function or pattern name."), <traceback object at 0x7f0b05ec2440>) :Internal Server Error: /news/
+Traceback (most recent call last):
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    response = response.render()
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 694, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'post_detail' not found. 'post_detail' is not a valid view function or pattern name.
+2021-12-23 18:40:44,726 :: ERROR -- /home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :"GET /news/ HTTP/1.1" 500 275593
+2021-12-23 18:43:31,232 :: ERROR -- /home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/utils/log.py / (<class 'django.urls.exceptions.NoReverseMatch'>, NoReverseMatch("Reverse for 'post_delete' not found. 'post_delete' is not a valid view function or pattern name."), <traceback object at 0x7f600052e680>) :Internal Server Error: /news/
+Traceback (most recent call last):
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    response = response.render()
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 694, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'post_delete' not found. 'post_delete' is not a valid view function or pattern name.
+2021-12-23 18:43:31,237 :: ERROR -- /home/mikryam/PythonProjects/SF/Dj_7_Celery_Reddis/D_news/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :"GET /news/ HTTP/1.1" 500 276186
